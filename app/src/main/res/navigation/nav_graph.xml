@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/naslovFragment">
+
+    <fragment
+        android:id="@+id/naslovFragment"
+        android:name="rs.ac.pr.ftn.srusititrecidomaci.NaslovFragment"
+        android:label="Naslovna"
+        tools:layout="@layout/fragment_naslov">
+
+        <action
+            android:id="@+id/action_naslovFragment_to_prikazTekstaFragment"
+            app:destination="@id/prikazTekstaFragment" />
+
+        <action
+            android:id="@+id/action_naslovFragment_to_iksOksFragment"
+            app:destination="@id/iksOksFragment" />
+
+        <action
+            android:id="@+id/action_naslovFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/prikazTekstaFragment"
+        android:name="rs.ac.pr.ftn.srusititrecidomaci.PrikazTekstaFragment"
+        android:label="Приказ текста"
+        tools:layout="@layout/fragment_prikaz_teksta">
+
+        <!-- DODATA AKCIJA -->
+        <action
+            android:id="@+id/action_prikazTekstaFragment_to_rezultatFragment"
+            app:destination="@id/rezultatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/iksOksFragment"
+        android:name="rs.ac.pr.ftn.srusititrecidomaci.IksOksFragment"
+        android:label="Икс Окс"
+        tools:layout="@layout/fragment_iks_oks">
+
+        <action
+            android:id="@+id/action_iksOksFragment_to_rezultatFragment"
+            app:destination="@id/rezultatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="rs.ac.pr.ftn.srusititrecidomaci.AboutFragment"
+        android:label="О апликацији"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/rezultatFragment"
+        android:name="rs.ac.pr.ftn.srusititrecidomaci.RezultatFragment"
+        android:label="Резултат"
+        tools:layout="@layout/fragment_rezultat" />
+</navigation>
+

@@ -1,0 +1,56 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#ADD8E6"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/tvNaslovAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="О апликацији"
+        android:textSize="22sp"
+        android:textColor="#000000"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Аутор: Сабина Рушити"
+        android:textSize="18sp"
+        android:textColor="#000000"
+    android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvVerzija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Верзија: 1.0"
+        android:textSize="18sp"
+        android:textColor="#000000"
+    android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Апликација демонстрира рад са фрагментима и навигацијом у Android-у."
+        android:textSize="16sp"
+        android:textColor="#000000"
+    android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textColor="#000000" />
+</LinearLayout>
