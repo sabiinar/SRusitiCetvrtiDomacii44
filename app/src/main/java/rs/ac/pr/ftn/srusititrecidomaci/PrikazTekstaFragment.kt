@@ -66,7 +66,7 @@ class PrikazTekstaFragment : Fragment(R.layout.fragment_prikaz_teksta) {
             findNavController().navigateUp()
         }
 
-        // Dugme "Готово" - novo
+        // Dugme "Готово"
         dugmeGotovo.setOnClickListener {
             val izabrani = viewModel.izabraniBroj
             if (izabrani == null) {
@@ -79,8 +79,8 @@ class PrikazTekstaFragment : Fragment(R.layout.fragment_prikaz_teksta) {
             }
 
             val bundle = Bundle().apply {
-                putString("GAME_NAME", "Текст игра")
-                putString("RESULT_TEXT", "Изабрани број: $izabrani")
+                putString("game_name", "Текст игра")
+                putString("result_key", "Изабрани број: $izabrani")
             }
 
             // Navigacija ka fragmentu za rezultate
